@@ -1,0 +1,76 @@
+:root {
+  --bg: #121212;
+  --text-light: #fff;
+  --text-dark: #111;
+  --accent: #00f2ff;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(145deg, #0f0f0f, #1a1a1a);
+  color: var(--text-light);
+  transition: all 0.3s ease;
+  scroll-behavior: smooth;
+}
+
+header, footer {
+  background: #1f1f1f;
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 1px solid #333;
+}
+
+h1, h2 {
+  color: var(--accent);
+  text-shadow: 0 0 8px var(--accent);
+}
+
+main {
+  padding: 2rem;
+}
+
+section {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: rgba(255,255,255,0.03);
+  border-radius: 16px;
+  box-shadow: 0 0 15px rgba(0,255,255,0.1);
+  backdrop-filter: blur(8px);
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 10px;
+  border: none;
+  background: rgba(255,255,255,0.08);
+  color: var(--text-light);
+  font-size: 1rem;
+}
+
+form button {
+  padding: 10px 20px;
+  background: var(--accent);
+  border: none;
+  color: black;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+form button:hover {
+  transform: scale(1.05);
+}
+
+/* Contact Section Styling */
+.contact-section {
+  margin-top: 40px;
+  background: rgba(0, 255, 255, 0.03);
+  border-left: 5px solid var(--accent);
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 0 12px rgba(0, 255, 255, 0.15);
+}

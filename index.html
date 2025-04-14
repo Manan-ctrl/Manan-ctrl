@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aijaz Ansari | Blog Site</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Welcome to Aijaz Ansari's Blog Site</h1>
+    <p>Post and share your thoughts. Connect through Gmail. Login to get started!</p>
+  </header>
+
+  <main>
+    <section id="login-signup">
+      <h2>Login / Sign Up</h2>
+      <form id="loginForm">
+        <input type="text" placeholder="Username" id="username" required />
+        <input type="password" placeholder="Password" id="password" required />
+        <button type="submit">Login / Signup</button>
+      </form>
+    </section>
+
+    <section id="blog-post-area" style="display:none;">
+      <h2>Post a Blog</h2>
+      <textarea id="blogContent" placeholder="Write your blog here..."></textarea>
+      <button onclick="postBlog()">Post Blog</button>
+    </section>
+
+    <section id="blog-display">
+      <h2>Community Blogs</h2>
+      <div id="blogs"></div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+      <h2>Contact Me</h2>
+      <form action="https://formsubmit.co/ansari.manan2007@gmail.com" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://thankyou.page">
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Aijaz Ansari. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
